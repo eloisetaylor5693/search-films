@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid black;
+}
+
+.site-name {
+  max-width: 6ch;
+  margin-bottom: 0%;
+}
+

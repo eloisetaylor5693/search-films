@@ -1,4 +1,6 @@
 .search-bar {
     display: flex;
     flex-direction: row;
+    align-self: flex-end;
+    align-items: center;
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import './Header.css'
 
 function Header(): JSX.Element {
   return (
-    <div>
-      <h1>Wookie Movies</h1>
-      <SearchBar/>
-    </div>
+    <header className="page-header">
+      <h1 className="site-name">Wookie Movies</h1>
+      <SearchBar />
+    </header>
   );
 }
 
