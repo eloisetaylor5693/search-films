@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { Film } from "../Film";
 import FilmList from "../components/FilmList";
+import Header from "../components/Header";
 
 export const FilmResultsContext = React.createContext<Film[]>([]);
 
@@ -31,9 +32,7 @@ function Search(): JSX.Element {
 
   return (
     <FilmResultsContext.Provider value={films}>
-        <div>
-            <button>Search</button>
-        </div>
+      <Header />
       <FilmList />
     </FilmResultsContext.Provider>
   );
