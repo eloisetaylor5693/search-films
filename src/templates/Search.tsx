@@ -1,14 +1,9 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Film } from "../Film";
-import FilmList from "./FilmList";
+import FilmList from "../components/FilmList";
 
 export const FilmResultsContext = React.createContext<Film[]>([]);
 
-
-// This full logic should be in a page
-// then the page uses 2 components
-//      - Search Bar
-//      - Film List
 function Search(): JSX.Element {
   const [films, setFilms] = useState<Film[]>([]);
   const [loading, setLoading] = useState(true);
@@ -18,7 +13,6 @@ function Search(): JSX.Element {
       return;
     }
 
-    //   useMemo(() => {
     fetch("https://wookie.codesubmit.io/movies", {
       headers: {
         "Content-Type": "application/json",
