@@ -2,14 +2,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 4rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 3px solid black;
+  padding-left: var(--spacing-16);
+  padding-right: var(--spacing-8);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 3px solid var(--color-text-light);
+  color: var(--color-text-light);
 }
 
 .site-name {
   max-width: 6ch;
   margin-bottom: 0%;
+  color: var(--color-text);
 }
 
