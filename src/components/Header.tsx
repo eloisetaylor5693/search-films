@@ -5,7 +5,7 @@ import './Header.css'
 function Header(): JSX.Element {
   return (
     <header className="page-header">
-      <h1 className="site-name">Wookie Movies</h1>
+      <h1 className="site-name">WOOKIE MOVIES</h1>
       <SearchBar />
     </header>
   );
