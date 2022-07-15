@@ -1,5 +1,5 @@
 import React from "react";
-import { FilmResultsContext } from "./Search";
+import { FilmResultsContext } from "../templates/Search";
 import { Film } from "../Film";
 
 function FilmList(): JSX.Element {
@@ -10,7 +10,7 @@ function FilmList(): JSX.Element {
       {contextData.map((film: Film) => {
         return (
           <div key={film.id}>
-            <h1>{film.title}</h1>
+            <h2>{film.title}</h2>
           </div>
         );
       })}
