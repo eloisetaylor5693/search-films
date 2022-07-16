@@ -11,7 +11,7 @@ const getGenres = (films: Film[]): string[] => {
   films.forEach((x: Film) =>
     x.genres.forEach((y: string) => allGenres.push(y))
   );
-  const distinctGenres = [...new Set(allGenres)].sort();
+  const distinctGenres = Array.from(new Set(allGenres)).sort();
   return distinctGenres;
 };
 
