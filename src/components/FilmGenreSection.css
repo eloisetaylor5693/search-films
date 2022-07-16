@@ -1,0 +1,9 @@
+.genre {
+  text-align: start;
+}
+
+.film-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-3);
+}
