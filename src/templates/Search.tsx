@@ -28,7 +28,7 @@ function Search(): JSX.Element {
       .finally(() => {
         setLoading(false);
       });
-  }, [films]);
+  }, [films, loading]);
 
   return (
     <FilmResultsContext.Provider value={films}>
