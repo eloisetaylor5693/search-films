@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import Search from "./Search";
+import BrowseFilms from "./BrowseFilms";
 
-describe('Search template', () => {
+describe('BrowseFilms template', () => {
   it('Loads site title', () => {
-    render(<Search/>);
+    render(<BrowseFilms/>);
       const result = screen.getByText("WOOKIE MOVIES");
       expect(result).toBeDefined();
   });

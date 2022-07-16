@@ -15,7 +15,7 @@ const getGenres = (films: Film[]): string[] => {
   return distinctGenres;
 };
 
-function Search(): JSX.Element {
+function BrowseFilms(): JSX.Element {
   const [films, setFilms] = useState<Film[]>([]);
   const [genres, setGenres] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
@@ -53,4 +53,4 @@ function Search(): JSX.Element {
   );
 }
 
-export default Search;
+export default BrowseFilms;

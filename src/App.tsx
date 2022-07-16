@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Search from './templates/Search';
+import BrowseFilms from './templates/BrowseFilms';
 
 function App() {
   return (
     <div className="App">
-      <Search />
+      <BrowseFilms />
     </div>
   );
 }

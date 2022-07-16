@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { FilmResultsContext, GenreResultsContext } from "../templates/Search";
+import { FilmResultsContext, GenreResultsContext } from "../templates/BrowseFilms";
 import "./FilmList.css";
 import FilmGenreSection from "./FilmGenreSection";
 
