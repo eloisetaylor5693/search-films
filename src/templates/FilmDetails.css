@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-8);
+  margin-top: var(--spacing-12);
+}
