@@ -20,7 +20,7 @@ const mockFilms: Film[] = [
   },
 ];
 
-describe("FilmGenreSection", () => {
+describe("FilmGenreSection component", () => {
   describe('given a list of films which match the given genre', () => {
     it("Loads a genre title", () => {
       render(<FilmGenreSection filmList={mockFilms} genre={"action"} />);
