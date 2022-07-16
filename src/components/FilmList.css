@@ -1,3 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: var(--maxWidth-full);
+  margin-left: var(--spacing-6);
+}
+
+.genre {
+  text-align: start;
+}
+
 .film-list {
   display: flex;
   flex-direction: row;
