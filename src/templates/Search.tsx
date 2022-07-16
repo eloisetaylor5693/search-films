@@ -4,9 +4,20 @@ import FilmList from "../components/FilmList";
 import Header from "../components/Header";
 
 export const FilmResultsContext = React.createContext<Film[]>([]);
+export const GenreResultsContext = React.createContext<string[]>([]);
+
+const getGenres = (films: Film[]): string[] => {
+  const allGenres: string[] = [];
+  films.forEach((x: Film) =>
+    x.genres.forEach((y: string) => allGenres.push(y))
+  );
+  const distinctGenres = [...new Set(allGenres)].sort();
+  return distinctGenres;
+};
 
 function Search(): JSX.Element {
   const [films, setFilms] = useState<Film[]>([]);
+  const [genres, setGenres] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
   useMemo(() => {
@@ -23,17 +34,21 @@ function Search(): JSX.Element {
       .then((response) => response.json())
       .then((data) => {
         setFilms(data.movies);
-        console.log(data);
+
+        const allGenres = getGenres(data.movies);
+        setGenres(allGenres);
       })
       .finally(() => {
         setLoading(false);
       });
-  }, [films, loading]);
+  }, [loading]);
 
   return (
     <FilmResultsContext.Provider value={films}>
       <Header />
-      <FilmList />
+      <GenreResultsContext.Provider value={genres}>
+        <FilmList />
+      </GenreResultsContext.Provider>
     </FilmResultsContext.Provider>
   );
 }
