@@ -3,6 +3,7 @@
 [Tech test instructions](./docs/TechTestInstructions.md)
 
 ## How to run
+Prerequisite: node v16.10 or above
 1. `npm install`
 2. `npm run start`
 
