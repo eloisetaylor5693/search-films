@@ -18,8 +18,8 @@
 - Added testing 
 
 ## Features not delivered
-- rating stars
-- searching for a film
+- Searching for a film using the search bar on the Browse Films page
+- Rating stars on the Film Details page
 
 
 ## Notes
