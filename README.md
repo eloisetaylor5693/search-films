@@ -2,6 +2,10 @@
 
 [Tech test instructions](./docs/TechTestInstructions.md)
 
+## How to run
+1. `npm install`
+2. `npm run start`
+
 ## Structure
 - `Components` - smaller building blocks to build up the site
 - `helpers` - functions that can map/transform data
