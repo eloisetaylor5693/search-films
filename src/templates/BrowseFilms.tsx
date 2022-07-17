@@ -6,7 +6,7 @@ import Header from "../components/Header";
 export const FilmResultsContext = React.createContext<Film[]>([]);
 export const GenreResultsContext = React.createContext<string[]>([]);
 
-const getGenres = (films: Film[]): string[] => {
+const getAllGenresFromFilmList = (films: Film[]): string[] => {
   const allGenres: string[] = [];
   films.forEach((x: Film) =>
     x.genres.forEach((y: string) => allGenres.push(y))
@@ -35,7 +35,7 @@ function BrowseFilms(): JSX.Element {
       .then((data) => {
         setFilms(data.movies);
 
-        const allGenres = getGenres(data.movies);
+        const allGenres = getAllGenresFromFilmList(data.movies);
         setGenres(allGenres);
       })
       .finally(() => {
