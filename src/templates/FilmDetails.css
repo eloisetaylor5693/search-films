@@ -1,6 +1,23 @@
-.container {
+.details-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+
+  /* on smaller screens, stack so you see the description on top of the image */
+  flex-wrap: wrap-reverse;
+
+  /* ensure there's a gap between the image and the film description whether side-by-side or on top */
   gap: var(--spacing-8);
+
   margin-top: var(--spacing-12);
+  padding-right: var(--spacing-8);
+}
+
+.film-description > p {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.film-description {
+  width: 80ch;
 }

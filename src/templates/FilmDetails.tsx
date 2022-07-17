@@ -12,9 +12,9 @@ function FilmDetails({ film }: FilmDetailsProps): JSX.Element | null {
   }
 
   return (
-    <div className="container">
+    <div className="details-container">
       <img src={film.poster} alt={`${film.title} poster`} height="700px" />
-      <div>
+      <div className="film-description">
         <h2>{`${film.title} (${film.imdb_rating})`}</h2>
         <p>{`${film.released_on.getFullYear} | ${film.length} | ${film.director}`}</p>
         <p>{`cast: ${film.cast.join(", ")}`}</p>
