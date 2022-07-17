@@ -3,8 +3,9 @@ export interface Film{
     title: string;
     backdrop: string;
     cast: string[];
+    classification?: string;
     genres: string[];
-    director: string;
+    director: string | string[];
     imdb_rating: number;
     length: string;
 
