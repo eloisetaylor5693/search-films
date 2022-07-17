@@ -21,9 +21,10 @@ Prerequisite: node v16.10 or above
 - Naviation from browse screen to film details screen on clicking a film's thumbnail
 - Mostly represented the designs though not pixel-perfect
 - Added testing 
+- Searching for a film using the search bar from the Browse Films page
 
 ## Features not delivered
-- Searching for a film using the search bar on the Browse Films page
+- Searching for a film using the search bar from the Film Details page
 - Rating stars on the Film Details page
 
 
