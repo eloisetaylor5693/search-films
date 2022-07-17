@@ -7,7 +7,14 @@ export interface Film{
     director: string;
     imdb_rating: number;
     length: string;
-    released_on: Date;
+
+    /**  deserialisation of the date must have failed when this type was a date
+         when I used `film.released_on.getFullYear` in src/templates/FilmDetails.tsx
+         the value came out as undefined.  In a business app I'd try to keep strong 
+         typing where possible
+    */
+    released_on: string;
+    
     overview: string;
     poster: string;
     slug: string;
