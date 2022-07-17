@@ -21,7 +21,13 @@ function FilmGenreSection({
           .filter((x) => x.genres.includes(genre))
           .map((film: Film) => {
             return (
-              <Link key={film.id} to={`/film-details`}>
+              <Link
+                key={film.id}
+                to={{
+                  pathname: `/film-details/${film.slug}`,
+                }}
+                state={film}
+              >
                 <img
                   src={film.backdrop}
                   alt={`${film.title} poster`}

@@ -4,7 +4,7 @@ import "./global.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FilmDetails from "./templates/FilmDetails";
+import RoutedFilmDetails from "./routes/film-details";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,27 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route
-          path="film-details"
-          element={
-            <FilmDetails
-              film={{
-                id: "123",
-                title: "hello",
-                backdrop: "url.com",
-                cast: ["Eloise"],
-                genres: ["action", "drama"],
-                director: "Eloise",
-                imdb_rating: 4.9,
-                length: "2 hours",
-                released_on: new Date(2022, 5, 1),
-                overview: "it's a nice film",
-                poster: "url.com",
-                slug: "slug-film-title",
-              }}
-            />
-          }
-        />
+        <Route path="/film-details/:name" element={<RoutedFilmDetails />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
