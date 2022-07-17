@@ -3,9 +3,7 @@ import { Film } from "../Film";
 import FilmList from "../components/FilmList";
 import Header from "../components/Header";
 import { getAllGenresFromFilmList } from "../helpers/get-genres";
-
-export const FilmResultsContext = React.createContext<Film[]>([]);
-export const GenreResultsContext = React.createContext<string[]>([]);
+import { FilmResultsContext, GenreResultsContext } from "../helpers/Contexts";
 
 function BrowseFilms(): JSX.Element {
   const [films, setFilms] = useState<Film[]>([]);

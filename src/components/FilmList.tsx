@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { FilmResultsContext, GenreResultsContext } from "../templates/BrowseFilms";
+import { FilmResultsContext, GenreResultsContext } from "../helpers/Contexts";
 import "./FilmList.css";
 import FilmGenreSection from "./FilmGenreSection";
 
@@ -12,8 +12,7 @@ function FilmList(): JSX.Element {
   useMemo(() => {
     setFilms(filmContextData);
     setGenres(genreContextData);
-    console.log(genres);
-  }, [filmContextData, genreContextData, genres]);
+  }, [filmContextData, genreContextData]);
 
   return (
     <div className="container">
