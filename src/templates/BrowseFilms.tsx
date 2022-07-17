@@ -2,18 +2,10 @@ import React, { useMemo, useState } from "react";
 import { Film } from "../Film";
 import FilmList from "../components/FilmList";
 import Header from "../components/Header";
+import { getAllGenresFromFilmList } from "../helpers/get-genres";
 
 export const FilmResultsContext = React.createContext<Film[]>([]);
 export const GenreResultsContext = React.createContext<string[]>([]);
-
-const getAllGenresFromFilmList = (films: Film[]): string[] => {
-  const allGenres: string[] = [];
-  films.forEach((x: Film) =>
-    x.genres.forEach((y: string) => allGenres.push(y))
-  );
-  const distinctGenres = Array.from(new Set(allGenres)).sort();
-  return distinctGenres;
-};
 
 function BrowseFilms(): JSX.Element {
   const [films, setFilms] = useState<Film[]>([]);
