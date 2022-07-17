@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Film } from "../Film";
 import "./FilmGenreSection.css";
 
@@ -20,14 +21,14 @@ function FilmGenreSection({
           .filter((x) => x.genres.includes(genre))
           .map((film: Film) => {
             return (
-              <div key={film.id}>
+              <Link key={film.id} to={`/film-details`}>
                 <img
                   src={film.backdrop}
                   alt={`${film.title} poster`}
                   height="200px"
                   width="300px"
                 />
-              </div>
+              </Link>
             );
           })}
       </div>
