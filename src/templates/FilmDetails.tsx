@@ -20,7 +20,8 @@ function FilmDetails({ film }: FilmDetailsProps): JSX.Element | null {
 
   return (
     <>
-      <Header />
+      {/* not handling search from film details page atm */}
+      <Header handleSearchInput={() => {}} />
 
       <div className="details-container">
         <img src={film.poster} alt={`${film.title} poster`} height="700px" />
