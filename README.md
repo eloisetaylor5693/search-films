@@ -1,43 +1,29 @@
-### Objective
+# Wookie Movies Tech Test
 
-Your assignment is to implement a movie streaming dashboard using TypeScript and React.
+[Tech test instructions](./docs/TechTestInstructions.md)
 
-### Brief
+## Structure
+- `Components` - smaller building blocks to build up the site
+- `helpers` - functions that can map/transform data
+- `routes` - part of the routing so you can navigate
+- `templates` - the whole page 
+- `testData` - data for unit tests
 
-You are the owner of a movie theater in **Thikkiiana City,** on the Wookiee homeworld of Kashyyyk. Your customers are bored with the never changing selection and are asking for something completely different - they want to see what's playing on Earth. Wookies are the main exporter of Computer Technology for the New Republic so naturally you roll up your sleeves and get to work. You quickly scribble down some notes and after a few hours of relentless work you have a design in mind.
 
-### Tasks
+## Delivered
+- Browse films page
+- Film details page
+- Naviation from browse screen to film details screen on clicking a film's thumbnail
+- Mostly represented the designs though not pixel-perfect
+- Added testing 
 
--   Implement assignment using:
-    -   Language: **TypeScript**
-    -   Framework: **React**
--   Build out the project to the designs inside the `/Designs` folder
--   Connect your application to the **CodeSubmit Movie Database** at `https://wookie.codesubmit.io/movies`
--   For authentication pass the `"Authorization: Bearer Wookie2021"` header
--   Parse the API response and display the results as outlined in the design. **Make sure to group movies by categories**.
--   Implement a detail view for the movies in the list
--   Make sure that inking to detail pages as well as bookmarking works as expected
--   Implement search by connecting to `https://wookie.codesubmit.io/movies?q=<search_term>`
+## Features not delivered
+- rating stars
+- searching for a film
 
-### Deliverables
 
-Make sure to include all source code in the repository.
+## Notes
 
-### Evaluation Criteria
-
--   **TypeScript** best practices
--   We're looking for you to produce working code, with enough room to demonstrate how to structure components in a small program.
--   Show us your work through your commit history
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?
-
-### CodeSubmit
-
-Please organize, design, test and document your code as if it were
-going into production - then push your changes to the master branch.
-
-All the best and happy coding,
-
-The Virtual Pricing Director Team
+- Avoided pixel-perfect design because without a tool like figma, it's extremely time-consuming to find the correct fonts, SVGs etc. I could download the exact SVGs using figma or other design tools, so chose an image that looked similar.  
+- I would notmally use more libraries to make development easier eg Prettier, Storybook, Tailwind/HeadlessUI or other frameworks.  In the interests of time I chose not to and instead focus on feature completeness as much as possible.  Every 5 minutes here and there adds up until you realise you haven't done the actual feature yet.
+- For routing I would usually use `nextjs` or `Gatsby` since they abstract away the routing logic (plus other benefits).  I found React routing without those frameworks to be much more time-consuming so opted to drop some features.
