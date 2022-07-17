@@ -1,9 +1,7 @@
 import { getAllGenresFromFilmList } from "./get-genres";
-import filmData from "../testData/films.json";
+import { films } from "../testData/films";
 
 describe("getGenres helper", () => {
-  const films = filmData.movies;
-
   describe("Given a list of films that have genres", () => {
     it("Then should return a distinct list of genres in alphabetical order", () => {
       const result = getAllGenresFromFilmList(films);
