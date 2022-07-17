@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import BrowseFilms from './templates/BrowseFilms';
 
 function App() {
