@@ -15,3 +15,6 @@
   color: var(--color-text);
 }
 
+.header-link {
+  text-decoration: none; 
+}

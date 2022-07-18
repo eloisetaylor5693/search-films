@@ -10,7 +10,7 @@ interface HeaderProps {
 function Header({ handleSearchInput }: HeaderProps): JSX.Element {
   return (
     <header className="page-header">
-      <Link to="/">
+      <Link to="/" className="header-link">
         <h1 className="site-name">WOOKIE MOVIES</h1>
       </Link>
 
