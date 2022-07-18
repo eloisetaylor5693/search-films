@@ -30,6 +30,6 @@ Prerequisite: node v16.10 or above
 
 ## Notes
 
-- Avoided pixel-perfect design because without a tool like figma, it's extremely time-consuming to find the correct fonts, SVGs etc. I could download the exact SVGs using figma or other design tools, so chose an image that looked similar.  
+- Avoided pixel-perfect design because without a tool like figma it's extremely time-consuming to find the correct fonts, SVGs etc. In a tool like figma I can click on an item and see colours/fonts/font weights/download the exact SVGs.  
 - I would normally use certain libraries to make development easier eg Prettier, Storybook, Tailwind/HeadlessUI or other frameworks.  In the interests of time I chose not to and instead focus on feature completeness as much as possible.  Every 5 minutes here and there adds up until you realise you haven't done the actual feature yet.
-- For routing I would usually use `nextjs` or `Gatsby` since they abstract away the routing logic (plus other benefits).  I found React routing without those frameworks to be much more time-consuming so opted to drop some features.  I haven't configured routing where if you type a url of a valid film, it loads the details page.  
+- For routing I would usually use `nextjs` or `Gatsby` since they abstract away the routing logic (plus other benefits).  I found React routing without those frameworks to be much more time-consuming so opted to drop some features.  I haven't configured routing for navigating directly to a film's details just by the URL for example.  
