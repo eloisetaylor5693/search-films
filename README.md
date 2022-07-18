@@ -8,6 +8,8 @@ Prerequisite: node v16.10 or above
 2. `npm run start`
 
 ## Structure
+Created the app using command: `npx create-react-app wookie-movies --template typescript`
+
 - `components` - smaller building blocks to build up the site
 - `helpers` - functions that can map/transform data
 - `routes` - part of the routing so you can navigate
