@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 interface HeaderProps {
   handleSearchInput: (event: React.KeyboardEvent<HTMLInputElement>) => void;
@@ -9,7 +10,10 @@ interface HeaderProps {
 function Header({ handleSearchInput }: HeaderProps): JSX.Element {
   return (
     <header className="page-header">
-      <h1 className="site-name">WOOKIE MOVIES</h1>
+      <Link to="/">
+        <h1 className="site-name">WOOKIE MOVIES</h1>
+      </Link>
+
       <SearchBar handleSearchInput={handleSearchInput} />
     </header>
   );
