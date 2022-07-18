@@ -10,7 +10,7 @@
   gap: var(--spacing-8);
 
   margin-top: var(--spacing-12);
-  padding-right: var(--spacing-8);
+  padding: 0 var(--spacing-8);
 }
 
 .film-description > p {
@@ -20,4 +20,12 @@
 
 .film-description {
   width: 80ch;
+}
+
+.film-metadata{
+  margin-bottom: 0%;
+}
+
+.film-cast{
+  margin-top: 0%;
 }

@@ -33,12 +33,12 @@ function FilmDetails({ film }: FilmDetailsProps): JSX.Element | null {
             when I used `film.released_on.getFullYear` in src/templates/FilmDetails.tsx
             the value came out as undefined.  In a business app I'd try to keep strong typing where possible
          */}
-          <p>{`${film?.released_on?.substring(0, 4)} | ${
+          <p className="film-metadata">{`${film?.released_on?.substring(0, 4)} | ${
             film.length
           } | ${director}`}</p>
 
           {/* Casing of cast in the design looks like a lowercase c */}
-          <p>{`cast: ${film.cast.join(", ")}`}</p>
+          <p className="film-cast">{`cast: ${film.cast.join(", ")}`}</p>
           <p>{`Movie Description: ${film.overview}`}</p>
         </div>
       </div>
