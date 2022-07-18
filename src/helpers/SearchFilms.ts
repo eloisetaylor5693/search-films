@@ -1,5 +1,5 @@
 import { Film } from "../Film";
-import { getAllGenresFromFilmList } from "./get-genres";
+import { MapGenresFromFilmList } from "./MapGenresFromFilmList";
 
 export interface SearchFilmResult {
   films: Film[];
@@ -26,7 +26,7 @@ export function SearchFilms(
   })
     .then((response) => response.json())
     .then((data) => {
-      const allGenres = getAllGenresFromFilmList(data.movies);
+      const allGenres = MapGenresFromFilmList(data.movies);
       return Promise.resolve({ films: data.movies, genres: allGenres });
     })
     .catch((error) => {
