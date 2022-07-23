@@ -1,4 +1,5 @@
 # Wookie Movies Tech Test
+[![Build and tests](https://github.com/eloisetaylor5693/wookie-movies/actions/workflows/node.js.yml/badge.svg)](https://github.com/eloisetaylor5693/wookie-movies/actions/workflows/node.js.yml)
 
 [Tech test instructions](./docs/TechTestInstructions.md)
 
@@ -6,6 +7,11 @@
 Prerequisite: node v16.10 or above
 1. `npm install`
 2. `npm run start`
+
+### How to search for films in the running app
+
+On the Browse Films screen, enter a search term in the search bar, and press enter. 
+Eg batman
 
 ## Structure
 Created the app using command: `npx create-react-app wookie-movies --template typescript`
