@@ -1,4 +1,5 @@
 # Wookie Movies Tech Test
+[![Build and test](https://github.com/eloisetaylor5693/wookie-movies/actions/workflows/node.js.yml/badge.svg)](https://github.com/eloisetaylor5693/wookie-movies/actions/workflows/node.js.yml)
 
 [Tech test instructions](./docs/TechTestInstructions.md)
 
