@@ -29,8 +29,8 @@ function BrowseFilms(): JSX.Element {
       return;
     }
 
-    // we can use async functions inside hooks, but I prefer not to since it looks clunky.
-    // this is why I use promises instead: https://devtrium.com/posts/async-functions-useeffect
+    // we can use async functions inside hooks, but I prefer not to since it's less readable.
+    // I prefer to use promises inside hooks. https://devtrium.com/posts/async-functions-useeffect
     SearchFilms(currentSearch)
       .then((response) => {
         setFilms(response?.films ?? []);
