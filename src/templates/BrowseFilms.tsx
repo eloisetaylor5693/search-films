@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Film } from "../Film";
 import FilmList from "../components/FilmList";
 import Header from "../components/Header";
@@ -24,7 +24,7 @@ function BrowseFilms(): JSX.Element {
     }
   };
 
-  useMemo(() => {
+  useEffect(() => {
     if (!loading) {
       return;
     }
